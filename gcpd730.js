@@ -151,6 +151,9 @@ const updateStats = () => {
   funStatsBar.textContent =
     'Some fun stats for loaded matches:\n' +
     `Number of matches: ${funStats.numberOfMatches}\n` +
+    `Wins: ${funStats.wins}\n` +
+    `Losses: ${funStats.losses}\n` +
+    `Winrate: ${(funStats.wins / (funStats.wins + funStats.losses)) * 100}%\n` +
     `Total kills: ${funStats.totalKills}\n` +
     `Total assists: ${funStats.totalAssists}\n` +
     `Total deaths: ${funStats.totalDeaths}\n` +
